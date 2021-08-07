@@ -25,13 +25,7 @@ const multiplyByThree = function (multiplier) {
 
 
 
-
-// someFunction()
-
-
-
-
-// Named Function Expressio
+// Named Function Expression
 
 const getFibonacci = function finobacci(n) {
   if (n <= 1) {
@@ -45,7 +39,3 @@ const getFibonacci = function finobacci(n) {
 finobacci(5); // will cause an error because inner name can be called only from the inside of a function
 getFibonacci(5) // will work correctly
 
-
-
-// console.log(getFibonacci(4))
-// finobacci();
