@@ -8,38 +8,38 @@ sumTwoArguments(5, 3);
 
 
 
-// // Methods
-// const objectWithMethod = {
-//   a: 5,
-//   b: 3,
-//   sum: function() {    // Method
-//     console.log(this.a + this.b);
-//   },
-// };
+// Methods
+const objectWithMethod = {
+  a: 5,
+  b: 3,
+  sum: function() {    // Method
+    console.log(this.a + this.b);
+  },
+};
 
-// objectWithMethod.sum();
-
-
-
-
-// // // Function-constructors  
-// function FunctionConstructorFunction(a, b) {
-//   this.a = a;
-//   this.b = b;
-//   this.sum = function() {
-//     console.log(this.a + this.b);
-//   };
-// }
-
-// const instanceOfFunctionConstructor = new FunctionConstructorFunction(3, 5);
-// instanceOfFunctionConstructor.sum();
+objectWithMethod.sum();
 
 
 
 
-// // // New function syntax
-// const neverUsedSyntax = new Function('a', 'b', 'c', 'd', 'console.log(a + b + c + d);');
-// neverUsedSyntax(5, 5, 5, 5);
+// // Function-constructors  
+function FunctionConstructorFunction(a, b) {
+  this.a = a;
+  this.b = b;
+  this.sum = function() {
+    console.log(this.a + this.b);
+  };
+}
+
+const instanceOfFunctionConstructor = new FunctionConstructorFunction(3, 5);
+instanceOfFunctionConstructor.sum();
+
+
+
+
+// // New function syntax
+const neverUsedSyntax = new Function('a', 'b', 'c', 'd', 'console.log(a + b + c + d);');
+neverUsedSyntax(5, 5, 5, 5);
 
 
 
